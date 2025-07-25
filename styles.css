@@ -1,0 +1,77 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+.container {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+input, select, button {
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+}
+button {
+    background-color: #00c896;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background-color: #00a87a;
+    transform: translateY(-2px);
+}
+.instagram-link {
+    color: #999;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.instagram-link:hover {
+    color: #fff;
+}
+.result-label {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    word-wrap: break-word;
+}
+.logo-placeholder {
+    width: 120px;
+    height: 120px;
+    background-color: #00c896;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #111;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 200, 150, 0.7); }
+    100% { box-shadow: 0 0 0 20px rgba(0, 200, 150, 0); }
+}
